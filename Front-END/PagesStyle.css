@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Applied to all elements */
+body {
+    background-color: #FFFFFF;
+}
+
+header {
+    /* visibility: hidden; */
+    background-color: #E5F2E0;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 5px;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+button {
+    background-color: #b5caad;
+    color: #174324;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    left: 35rem;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
+
+/* Classes */
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+    gap: 2rem;
+
+}
+
+.navbar {
+    position: relative;
+    right: 37rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #174324;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #047500;
+}
+
+
+
+.navdropdown ul {
+    background-color: #E5F2E0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 7rem;
+    max-width: 20rem;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.navdropdown:hover>ul {
+    display: block;
+
+
+}
+
+.navdropdown ul li {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#dropdownarrow {
+    rotate: 180deg;
+    position: relative;
+    left: 7rem;
+    bottom: 0.5rem;
+}
+
+.navdropdown:hover #dropdownarrow {
+    rotate: -90deg;
+}
+
+/* Quran and Tajweed */
+
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img4 {
+    position: absolute;
+    scale: 80%;
+    transform: translateX(80rem) translateY(10rem);
+    border-radius: 7rem;
+}
+
+#QuranandTajweed {
+    position: relative;
+    min-height: 860px;
+}
+
+#QuranandTajweed img {
+    position: absolute;
+}
+
+/* ArabicLanguage */
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img5 {
+    position: absolute;
+    scale: 80%;
+    transform: translateX(12rem) translateY(7rem);
+    border-radius: 7rem;
+}
+
+#ArabicLanguage {
+    position: relative;
+    min-height: 860px;
+}
+
+#ArabicLanguage img {
+    position: absolute;
+}
+
+/* Hadith */
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img7 {
+    position: absolute;
+    scale: 60%;
+    transform: translateX(0rem) translateY(-7rem);
+    border-radius: 7rem;
+}
+
+#Hadith {
+    position: relative;
+    min-height: 860px;
+}
+
+#Hadith img {
+    position: absolute;
+}
+
+/* Tafsir */
+
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img8 {
+    position: absolute;
+    scale: 85%;
+    transform: translateX(12rem) translateY(7rem);
+    border-radius: 7rem;
+}
+
+#Tafsir {
+    position: relative;
+    min-height: 860px;
+}
+
+#Tafsir img {
+    position: absolute;
+}
+
+/* Fiqh */
+
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img6 {
+    position: absolute;
+    scale: 45%;
+    transform: translateX(95rem) translateY(-15rem);
+    border-radius: 7rem;
+}
+
+#Fiqh {
+    position: relative;
+    min-height: 860px;
+}
+
+#Fiqh img {
+    position: absolute;
+}
+
+/* Seerah */
+
+#bg1 {
+    position: absolute;
+    width: 1905px;
+    height: 860px;
+    transform: translateX(-2rem);
+
+}
+
+#img9 {
+    position: absolute;
+    scale: 80%;
+    transform: translateX(75rem) translateY(7rem);
+    border-radius: 7rem;
+}
+
+#Seerah {
+    position: relative;
+    min-height: 860px;
+}
+
+#Seerah img {
+    position: absolute;
+}
+
+/* Who Are We */
+#Sec1 {
+    position: relative;
+    min-height: 650px;
+    background-image: linear-gradient(to bottom, #ffffff 20%, #E5F2E0 100%);
+}
+
+#img10 {
+    position: absolute;
+    scale: 40%;
+    transform: translateX(-25rem) translateY(-45rem);
+    border-radius: 7rem;
+}
+
+#visual1 {
+    position: relative;
+    height: 413px;
+    width: 1905px;
+}
+
+#img12 {
+    position: absolute;
+    transform: translateX(-2rem);
+    align-items: center;
+}
+
+#visual2 {
+    position: relative;
+    height: 413px;
+    width: 1905px;
+    background-color: #054703;
+}
+
+#img13 {
+    position: absolute;
+    transform: translateX(-2rem);
+    align-items: center;
+    mix-blend-mode: overlay;
+}
+
+/* Contact */
+
+#Contact {
+    position: relative;
+    min-height: 500px;
+}
+
+#Contact hr {
+    position: absolute;
+    background-color: #174324;
+    transform: translateY(19rem) translateX(740px);
+    border-radius: 5px;
+}
+
+#Gmail {
+    position: absolute;
+    width: 9rem;
+    height: 3rem;
+    align-items: center;
+    transform: translateX(13rem) translateY(15rem);
+    transition: all 0.2s ease;
+}
+
+#Gmail img {
+    position: absolute;
+    width: 1.75rem;
+    transform: translateY(-1rem) translateX(4.22rem);
+
+}
+
+#Gmail:hover>h3 {
+    color: #ffffff;
+}
+
+#Gmail:hover>img {
+    filter: brightness(0) invert(100%);
+}
+
+#WA {
+    position: absolute;
+    width: 10.75rem;
+    height: 3rem;
+    align-items: center;
+    transform: translateX(27rem) translateY(15rem);
+    transition: all 0.2s ease;
+}
+
+#WA img {
+    position: absolute;
+    width: 1.75rem;
+    transform: translateY(-0.9rem) translateX(6rem);
+
+}
+
+#WA:hover>h3 {
+    color: #ffffff;
+}
+
+#WA:hover>img {
+    filter: brightness(0) invert(100%);
+}
+
+
+
+/* End Page */
+
+#pageEnd {
+    position: relative;
+    height: 720px;
+    background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
+}
+
+#pageEnd img {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    transform: translateX(47rem) translateY(5rem);
+}
+
+#pageEnd a {
+    text-decoration: none;
+    color: #0c2212;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#pageEnd h2 {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#pageEnd button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
+
+#seperator2 {
+    position: relative;
+    transform: translateX(550px);
+}
+
+#facebookbutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(17rem);
+}
+
+#facebookbutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+}
+
+#facebookbutton:hover>img {
+    filter: invert(100%);
+}
+
+#instagrambutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(28rem);
+}
+
+#instagrambutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+}
+
+#instagrambutton:hover>img {
+    filter: invert(100%);
+}
+
+#Phone p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 100px;
+    text-transform: capitalize;
+    transform: translateX(38rem);
+}
+
+#Email p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 100px;
+    text-transform: capitalize;
+    transform: translateX(68rem) translateY(-1.6rem);
+}
+
+/* Floating Buttons */
+
+.FloatingButtons {
+    /* Fixes the button relative to the viewport */
+    position: fixed;
+
+
+    /* Size and shape */
+    width: 10rem;
+    height: 3rem;
+
+    /* Styling & Alignment */
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+    /* Keep on top of other content */
+    z-index: 1000;
+
+    transition: transform 0.2s ease;
+}
+
+.FloatingButtons:hover {
+    transform: translateY(-5px);
+}
+
+#whatsapp {
+    background-color: #20BA5A;
+    bottom: 5rem;
+    left: 108rem;
+}
+
+#whatsapp:hover {
+    background-color: #1b994b;
+}
+
+#whatsapp img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+}
+
+#whatsapp p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
+
+#callus {
+    background-color: rgb(0, 89, 255);
+    bottom: 1rem;
+    left: 108rem;
+}
+
+#callus:hover {
+    background-color: rgb(1, 74, 211);
+}
+
+#callus img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+}
+
+#callus p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
