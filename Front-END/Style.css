@@ -29,7 +29,7 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     max-width: 100%;
     width: 1280px;
     z-index: 1000;
