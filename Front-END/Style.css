@@ -5,18 +5,10 @@
     scroll-behavior: smooth;
 }
 
-/* Centered layout canvas */
+/* Applied to all elements */
 html {
     position: relative;
     width: 1280px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-}
-
-body {
-    background-color: #FFFFFF;
-    width: 1280px;
-    margin: 0 auto;
 }
 
 main {
@@ -25,22 +17,22 @@ main {
     margin: auto;
 }
 
+body {
+    background-color: #FFFFFF;
+    width: 1280px;
+}
+
 header {
+
     background-color: #E5F2E0;
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
     max-width: 100%;
     width: 1280px;
     z-index: 1000;
-}
-
-header a img {
-    position: relative;
-    left: 2rem;
 }
 
 p {
@@ -115,11 +107,7 @@ button:hover {
     color: #047500;
 }
 
-.dropdown-title {
-    color: #174324;
-    position: relative;
-    top: 0.75rem;
-}
+
 
 .navdropdown ul {
     background-color: #E5F2E0;
@@ -132,8 +120,10 @@ button:hover {
     z-index: 1;
 }
 
-.navdropdown:hover > ul {
+.navdropdown:hover>ul {
     display: block;
+
+
 }
 
 .navdropdown ul li {
@@ -152,10 +142,12 @@ button:hover {
     rotate: -90deg;
 }
 
+
+
 #img1 {
     position: relative;
     width: 200px;
-    left: 520px;
+    left: 520px
 }
 
 /* Section 1 */
@@ -165,6 +157,7 @@ button:hover {
     width: 1280px;
     height: 415px;
     transform: translateX(-2rem);
+
 }
 
 #img2 {
@@ -184,24 +177,6 @@ button:hover {
     position: absolute;
 }
 
-#Sec1 p {
-    position: absolute;
-    font-size: 75px;
-    top: 6rem;
-    left: 3rem;
-    color: #174324;
-    scale: 50%;
-}
-
-#Sec1 h3 {
-    color: #174324;
-    position: absolute;
-    font-size: 25px;
-    top: 14rem;
-    left: -0.75rem;
-    scale: 50%;
-}
-
 #Sec1 button {
     position: absolute;
     display: flex;
@@ -210,15 +185,9 @@ button:hover {
     scale: 80%;
 }
 
-#Sec1 button img {
-    position: absolute;
-    left: 7.8rem;
-    top: 0.55rem;
-    rotate: 180deg;
-}
-
-#Sec1 button:hover > img {
+#Sec1 button:hover>img {
     filter: invert(100%);
+
 }
 
 /* Section 2 */
@@ -260,6 +229,7 @@ button:hover {
 
 #sectionCutter {
     transform: translateX(390px);
+
 }
 
 /* Courses Section */
@@ -278,6 +248,7 @@ button:hover {
     color: #174324;
     font-style: italic;
 }
+
 
 /* Courses Buttons */
 
@@ -302,7 +273,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C1:hover > h2 {
+#C1:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -314,11 +285,13 @@ button:hover {
     margin-top: 5rem;
     margin-bottom: 5rem;
     transform: translateX(-1.5rem);
+
 }
 
-#C1:hover > img {
+#C1:hover>img {
     border-radius: 50%;
     scale: 115%;
+
 }
 
 #C2 {
@@ -337,7 +310,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C2:hover > h2 {
+#C2:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -351,7 +324,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C2:hover > img {
+#C2:hover>img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -372,7 +345,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C3:hover > h2 {
+#C3:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -386,7 +359,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C3:hover > img {
+#C3:hover>img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -412,7 +385,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C4:hover > h2 {
+#C4:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -426,7 +399,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C4:hover > img {
+#C4:hover>img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -447,7 +420,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C5:hover > h2 {
+#C5:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -461,7 +434,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C5:hover > img {
+#C5:hover>img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -482,7 +455,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C6:hover > h2 {
+#C6:hover>h2 {
     color: #E5F2E0;
 }
 
@@ -496,7 +469,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C6:hover > img {
+#C6:hover>img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -507,7 +480,6 @@ button:hover {
     position: relative;
     height: 360px;
     background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
-    overflow: hidden;
 }
 
 #pageEnd img {
@@ -515,7 +487,6 @@ button:hover {
     width: 150px;
     height: 150px;
     transform: translateX(520px) translateY(0rem);
-    vertical-align: bottom;
 }
 
 #pageEnd a {
@@ -558,10 +529,9 @@ button:hover {
     width: 1.5rem;
     height: 1.5rem;
     transform: translateX(-2.25rem) translateY(0.25rem);
-    vertical-align: bottom;
 }
 
-#facebookbutton:hover > img {
+#facebookbutton:hover>img {
     filter: invert(100%);
 }
 
@@ -580,10 +550,9 @@ button:hover {
     width: 1.5rem;
     height: 1.5rem;
     transform: translateX(-2.25rem) translateY(0.25rem);
-    vertical-align: bottom;
 }
 
-#instagrambutton:hover > img {
+#instagrambutton:hover>img {
     filter: invert(100%);
 }
 
@@ -610,13 +579,23 @@ button:hover {
 /* Floating Buttons */
 
 .FloatingButtons {
+    /* Fixes the button relative to the viewport */
     position: fixed;
+
+
+    /* Size and shape */
     width: 10rem;
     height: 3rem;
+
+    /* Styling & Alignment */
+
     color: #ffffff;
     border: none;
     cursor: pointer;
+
+    /* Keep on top of other content */
     z-index: 1000;
+
     transition: transform 0.2s ease;
 }
 
@@ -627,7 +606,7 @@ button:hover {
 #whatsapp {
     background-color: #20BA5A;
     bottom: 2.5rem;
-    left: 1680px;
+    left: 1120px;
     scale: 70%;
 }
 
@@ -641,7 +620,6 @@ button:hover {
     height: 2rem;
     transform: translateX(-5rem);
     filter: invert(100%);
-    vertical-align: bottom;
 }
 
 #whatsapp p {
@@ -653,7 +631,7 @@ button:hover {
 #callus {
     background-color: rgb(0, 89, 255);
     bottom: 0rem;
-    left: 1680px;
+    left: 1120px;
     scale: 70%;
 }
 
@@ -667,7 +645,6 @@ button:hover {
     height: 2rem;
     transform: translateX(-5rem);
     filter: invert(100%);
-    vertical-align: bottom;
 }
 
 #callus p {
