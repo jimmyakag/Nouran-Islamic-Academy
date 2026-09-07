@@ -38,6 +38,11 @@ header {
     z-index: 1000;
 }
 
+header a img {
+    position: relative;
+    left: 2rem;
+}
+
 p {
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
@@ -110,6 +115,12 @@ button:hover {
     color: #047500;
 }
 
+.dropdown-title {
+    color: #174324;
+    position: relative;
+    top: 0.75rem;
+}
+
 .navdropdown ul {
     background-color: #E5F2E0;
     display: none;
@@ -121,7 +132,7 @@ button:hover {
     z-index: 1;
 }
 
-.navdropdown:hover>ul {
+.navdropdown:hover > ul {
     display: block;
 }
 
@@ -173,6 +184,24 @@ button:hover {
     position: absolute;
 }
 
+#Sec1 p {
+    position: absolute;
+    font-size: 75px;
+    top: 6rem;
+    left: 3rem;
+    color: #174324;
+    scale: 50%;
+}
+
+#Sec1 h3 {
+    color: #174324;
+    position: absolute;
+    font-size: 25px;
+    top: 14rem;
+    left: -0.75rem;
+    scale: 50%;
+}
+
 #Sec1 button {
     position: absolute;
     display: flex;
@@ -181,7 +210,14 @@ button:hover {
     scale: 80%;
 }
 
-#Sec1 button:hover>img {
+#Sec1 button img {
+    position: absolute;
+    left: 7.8rem;
+    top: 0.55rem;
+    rotate: 180deg;
+}
+
+#Sec1 button:hover > img {
     filter: invert(100%);
 }
 
@@ -266,7 +302,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C1:hover>h2 {
+#C1:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -280,7 +316,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C1:hover>img {
+#C1:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -301,7 +337,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C2:hover>h2 {
+#C2:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -315,7 +351,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C2:hover>img {
+#C2:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -336,7 +372,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C3:hover>h2 {
+#C3:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -350,7 +386,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C3:hover>img {
+#C3:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -376,7 +412,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C4:hover>h2 {
+#C4:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -390,7 +426,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C4:hover>img {
+#C4:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -411,7 +447,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C5:hover>h2 {
+#C5:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -425,7 +461,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C5:hover>img {
+#C5:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -446,7 +482,7 @@ button:hover {
     transform: translateY(-1.5rem);
 }
 
-#C6:hover>h2 {
+#C6:hover > h2 {
     color: #E5F2E0;
 }
 
@@ -460,7 +496,7 @@ button:hover {
     transform: translateX(-1.5rem);
 }
 
-#C6:hover>img {
+#C6:hover > img {
     border-radius: 50%;
     scale: 115%;
 }
@@ -525,7 +561,7 @@ button:hover {
     vertical-align: bottom;
 }
 
-#facebookbutton:hover>img {
+#facebookbutton:hover > img {
     filter: invert(100%);
 }
 
@@ -547,7 +583,7 @@ button:hover {
     vertical-align: bottom;
 }
 
-#instagrambutton:hover>img {
+#instagrambutton:hover > img {
     filter: invert(100%);
 }
 
