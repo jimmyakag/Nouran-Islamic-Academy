@@ -1,36 +1,641 @@
-/* Moved from inline HTML */
-.header-logo {
-    position: relative;
-    left: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.navdropdown .dropdown-title {
+/* Centered layout canvas */
+html {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+body {
+    background-color: #FFFFFF;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+    width: 1280px;
+    margin: auto;
+}
+
+header {
+    background-color: #E5F2E0;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 1280px;
+    z-index: 1000;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 5px;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+button {
+    background-color: #b5caad;
     color: #174324;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
     position: relative;
-    top: 0.75rem;
+    left: 35rem;
+    transition: all 0.2s ease;
 }
 
-#Sec1 p {
+button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
+
+/* Classes */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    transform: translateX(340px);
+}
+
+#joinnow {
+    position: relative;
+    transform: translateX(-340px);
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #174324;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #047500;
+}
+
+.navdropdown ul {
+    background-color: #E5F2E0;
+    display: none;
     position: absolute;
-    font-size: 75px;
-    top: 6rem;
-    left: 3rem;
-    color: #174324;
-    scale: 50%;
+    top: 100%;
+    transform: translateX(-50px);
+    max-width: 20rem;
+    padding: 0.5rem;
+    z-index: 1;
 }
 
-#Sec1 h3 {
-    color: #174324;
+.navdropdown:hover>ul {
+    display: block;
+}
+
+.navdropdown ul li {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#dropdownarrow {
+    rotate: 180deg;
+    position: relative;
+    left: 7rem;
+    bottom: 0.5rem;
+}
+
+.navdropdown:hover #dropdownarrow {
+    rotate: -90deg;
+}
+
+#img1 {
+    position: relative;
+    width: 200px;
+    left: 520px;
+}
+
+/* Section 1 */
+
+#bg1 {
+    position: absolute;
+    width: 1280px;
+    height: 415px;
+    transform: translateX(-2rem);
+}
+
+#img2 {
+    position: absolute;
+    scale: 22.5%;
+    transform: translateX(1280px) translateY(-115rem);
+    border-radius: 7rem;
+}
+
+#Sec1 {
+    position: relative;
+    min-height: 415px;
+    width: 1280px;
+}
+
+#Sec1 img {
+    position: absolute;
+}
+
+#Sec1 button {
+    position: absolute;
+    display: flex;
+    transform: translateY(21rem) translateX(-500px);
+    width: 9.3rem;
+    scale: 80%;
+}
+
+#Sec1 button:hover>img {
+    filter: invert(100%);
+}
+
+/* Section 2 */
+
+#hoveredArrow {
+    visibility: hidden;
+}
+
+#Sec2 {
+    position: relative;
+    min-height: 350px;
+    width: 1280px;
+}
+
+#Sec2 img {
+    position: absolute;
+}
+
+#Sec2 h2 {
+    position: absolute;
+    font-size: 3rem;
+    transform: translateX(840px) translateY(7rem);
+    scale: 70%;
+}
+
+#Sec2 h3 {
     position: absolute;
     font-size: 25px;
-    top: 14rem;
-    left: -0.75rem;
-    scale: 50%;
+    transform: translateX(725px) translateY(11rem);
+    scale: 70%;
 }
 
-#Sec1 .who-are-we-btn img {
+#img3 {
     position: absolute;
-    left: 7.8rem;
-    top: 0.55rem;
-    rotate: 180deg;
+    scale: 20%;
+    transform: translateY(-140rem) translateX(-1880px);
+    border-radius: 7rem;
+}
+
+#sectionCutter {
+    transform: translateX(390px);
+}
+
+/* Courses Section */
+
+#CoursesSec {
+    position: relative;
+    height: 520px;
+    width: 1280px;
+    background-image: linear-gradient(to bottom, #ffffff 40%, #E5F2E0 60%);
+}
+
+#CoursesSec p {
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    color: #174324;
+    font-style: italic;
+}
+
+/* Courses Buttons */
+
+.coursebuttons img {
+    transition: border-radius 0.15s ease, scale 0.2s ease;
+    transition: border-radius 0.15s ease-out, scale 0.2s ease-out;
+}
+
+#C1 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-210rem);
+}
+
+#C1 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C1:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C1 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C1:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C2 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-242rem);
+}
+
+#C2 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C2:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C2 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C2:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C3 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-182rem);
+}
+
+#C3 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C3:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C3 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C3:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#seperator {
+    position: relative;
+    transform: translateX(440px) translateY(15rem);
+}
+
+#C4 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-30rem);
+}
+
+#C4 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C4:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C4 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C4:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C5 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-30rem);
+}
+
+#C5 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C5:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C5 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C5:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C6 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-30rem);
+}
+
+#C6 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C6:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C6 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C6:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+/* End Page */
+
+#pageEnd {
+    position: relative;
+    height: 360px;
+    background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
+    overflow: hidden;
+}
+
+#pageEnd img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: translateX(520px) translateY(0rem);
+    vertical-align: bottom;
+}
+
+#pageEnd a {
+    text-decoration: none;
+    color: #0c2212;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#pageEnd h2 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    transform: translateY(-9rem);
+}
+
+#pageEnd button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
+
+#seperator2 {
+    position: relative;
+    transform: translateX(440px) translateY(-5rem);
+}
+
+#facebookbutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(-5rem) translateY(-9rem);
+    scale: 70%;
+}
+
+#facebookbutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+    vertical-align: bottom;
+}
+
+#facebookbutton:hover>img {
+    filter: invert(100%);
+}
+
+#instagrambutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(11rem) translateY(-9rem);
+    scale: 70%;
+}
+
+#instagrambutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+    vertical-align: bottom;
+}
+
+#instagrambutton:hover>img {
+    filter: invert(100%);
+}
+
+#Phone p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 50px;
+    text-transform: capitalize;
+    transform: translateX(30rem) translateY(-12rem);
+    scale: 80%;
+}
+
+#Email p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 50px;
+    text-transform: capitalize;
+    transform: translateX(52rem) translateY(-13.7rem);
+    scale: 80%;
+}
+
+/* Floating Buttons */
+
+.FloatingButtons {
+    position: fixed;
+    width: 10rem;
+    height: 3rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.FloatingButtons:hover {
+    transform: translateY(-5px);
+}
+
+#whatsapp {
+    background-color: #20BA5A;
+    bottom: 2.5rem;
+    left: 1680px;
+    scale: 70%;
+}
+
+#whatsapp:hover {
+    background-color: #1b994b;
+}
+
+#whatsapp img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+    vertical-align: bottom;
+}
+
+#whatsapp p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
+
+#callus {
+    background-color: rgb(0, 89, 255);
+    bottom: 0rem;
+    left: 1680px;
+    scale: 70%;
+}
+
+#callus:hover {
+    background-color: rgb(1, 74, 211);
+}
+
+#callus img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+    vertical-align: bottom;
+}
+
+#callus p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
 }
