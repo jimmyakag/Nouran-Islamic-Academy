@@ -6,8 +6,20 @@
 }
 
 /* Applied to all elements */
+html {
+    position: relative;
+    width: 1280px;
+}
+
+main {
+    position: relative;
+    width: 1280px;
+    margin: auto;
+}
+
 body {
     background-color: #FFFFFF;
+    width: 1280px;
 }
 
 header {
@@ -19,7 +31,7 @@ header {
     align-items: center;
     margin: auto;
     max-width: 100%;
-    width: 100%;
+    width: 1280px;
     z-index: 1000;
 }
 
@@ -68,14 +80,18 @@ button:hover {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-right: 2rem;
-    gap: 2rem;
+    gap: 50px;
+    transform: translateX(340px);
+}
 
+#joinnow {
+    position: relative;
+    transform: translateX(-340px);
 }
 
 .navbar {
     position: relative;
-    right: 37rem;
+    width: 100%;
 }
 
 .navbar a {
@@ -98,7 +114,7 @@ button:hover {
     display: none;
     position: absolute;
     top: 100%;
-    left: 7rem;
+    transform: translateX(-50px);
     max-width: 20rem;
     padding: 0.5rem;
     z-index: 1;
@@ -130,31 +146,31 @@ button:hover {
 
 #img1 {
     position: relative;
-    width: 30%;
-    height: 30%;
-    left: 41rem;
+    width: 200px;
+    left: 520px
 }
 
 /* Section 1 */
 
 #bg1 {
     position: absolute;
-    width: 1905px;
-    height: 830px;
+    width: 1280px;
+    height: 415px;
     transform: translateX(-2rem);
 
 }
 
 #img2 {
     position: absolute;
-    scale: 45%;
-    transform: translateX(115rem) translateY(-30rem);
+    scale: 22.5%;
+    transform: translateX(1280px) translateY(-115rem);
     border-radius: 7rem;
 }
 
 #Sec1 {
     position: relative;
-    min-height: 830px;
+    min-height: 415px;
+    width: 1280px;
 }
 
 #Sec1 img {
@@ -164,9 +180,9 @@ button:hover {
 #Sec1 button {
     position: absolute;
     display: flex;
-    scale: 140%;
-    transform: translateY(23rem) translateX(-13rem);
+    transform: translateY(21rem) translateX(-500px);
     width: 9.3rem;
+    scale: 80%;
 }
 
 #Sec1 button:hover>img {
@@ -182,46 +198,46 @@ button:hover {
 
 #Sec2 {
     position: relative;
-    min-height: 700px;
+    min-height: 350px;
+    width: 1280px;
 }
 
 #Sec2 img {
     position: absolute;
 }
 
-#img3 {
-    scale: 50%;
-    transform: translateY(85rem);
-}
-
 #Sec2 h2 {
     position: absolute;
     font-size: 3rem;
-    transform: translateX(60rem) translateY(14rem);
+    transform: translateX(840px) translateY(7rem);
+    scale: 70%;
 }
 
 #Sec2 h3 {
     position: absolute;
     font-size: 25px;
-    transform: translateX(60rem) translateY(19rem);
+    transform: translateX(725px) translateY(11rem);
+    scale: 70%;
 }
 
 #img3 {
     position: absolute;
-    scale: 40%;
-    transform: translateY(-40rem) translateX(-20rem);
+    scale: 20%;
+    transform: translateY(-140rem) translateX(-1880px);
     border-radius: 7rem;
 }
 
 #sectionCutter {
-    transform: translateX(475px);
+    transform: translateX(390px);
+
 }
 
 /* Courses Section */
 
 #CoursesSec {
     position: relative;
-    height: 830px;
+    height: 520px;
+    width: 1280px;
     background-image: linear-gradient(to bottom, #ffffff 40%, #E5F2E0 60%);
 }
 
@@ -243,10 +259,10 @@ button:hover {
 
 #C1 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(-150rem) translateY(-100rem);
+    transform: translateX(-350rem) translateY(-210rem);
 }
 
 #C1 h2 {
@@ -280,10 +296,10 @@ button:hover {
 
 #C2 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(0rem) translateY(-118rem);
+    transform: translateX(-175rem) translateY(-242rem);
 }
 
 #C2 h2 {
@@ -315,10 +331,10 @@ button:hover {
 
 #C3 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(150rem) translateY(-85rem);
+    transform: translateX(0rem) translateY(-182rem);
 }
 
 #C3 h2 {
@@ -350,15 +366,15 @@ button:hover {
 
 #seperator {
     position: relative;
-    transform: translateX(550px) translateY(25rem);
+    transform: translateX(440px) translateY(15rem);
 }
 
 #C4 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(-150rem) translateY(50rem);
+    transform: translateX(-350rem) translateY(-30rem);
 }
 
 #C4 h2 {
@@ -390,10 +406,10 @@ button:hover {
 
 #C5 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(0rem) translateY(50rem);
+    transform: translateX(-175rem) translateY(-30rem);
 }
 
 #C5 h2 {
@@ -425,10 +441,10 @@ button:hover {
 
 #C6 {
     position: absolute;
-    scale: 20%;
+    scale: 12%;
     width: 50rem;
     border-radius: 7rem;
-    transform: translateX(150rem) translateY(50rem);
+    transform: translateX(0rem) translateY(-30rem);
 }
 
 #C6 h2 {
@@ -462,15 +478,15 @@ button:hover {
 
 #pageEnd {
     position: relative;
-    height: 720px;
+    height: 360px;
     background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
 }
 
 #pageEnd img {
     position: relative;
-    width: 20rem;
-    height: 20rem;
-    transform: translateX(47rem) translateY(5rem);
+    width: 150px;
+    height: 150px;
+    transform: translateX(520px) translateY(0rem);
 }
 
 #pageEnd a {
@@ -483,8 +499,9 @@ button:hover {
 
 #pageEnd h2 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     font-style: italic;
+    transform: translateY(-9rem);
 }
 
 #pageEnd button:hover {
@@ -494,7 +511,7 @@ button:hover {
 
 #seperator2 {
     position: relative;
-    transform: translateX(550px);
+    transform: translateX(440px) translateY(-5rem);
 }
 
 #facebookbutton {
@@ -503,7 +520,8 @@ button:hover {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    transform: translateX(17rem);
+    transform: translateX(-5rem) translateY(-9rem);
+    scale: 70%;
 }
 
 #facebookbutton img {
@@ -523,7 +541,8 @@ button:hover {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    transform: translateX(28rem);
+    transform: translateX(11rem) translateY(-9rem);
+    scale: 70%;
 }
 
 #instagrambutton img {
@@ -541,18 +560,20 @@ button:hover {
     position: relative;
     font-style: italic;
     font-weight: bold;
-    width: 100px;
+    width: 50px;
     text-transform: capitalize;
-    transform: translateX(38rem);
+    transform: translateX(30rem) translateY(-12rem);
+    scale: 80%;
 }
 
 #Email p {
     position: relative;
     font-style: italic;
     font-weight: bold;
-    width: 100px;
+    width: 50px;
     text-transform: capitalize;
-    transform: translateX(68rem) translateY(-1.6rem);
+    transform: translateX(52rem) translateY(-13.7rem);
+    scale: 80%;
 }
 
 /* Floating Buttons */
@@ -584,8 +605,9 @@ button:hover {
 
 #whatsapp {
     background-color: #20BA5A;
-    bottom: 5rem;
-    left: 108rem;
+    bottom: 2.5rem;
+    left: 1120px;
+    scale: 70%;
 }
 
 #whatsapp:hover {
@@ -608,8 +630,9 @@ button:hover {
 
 #callus {
     background-color: rgb(0, 89, 255);
-    bottom: 1rem;
-    left: 108rem;
+    bottom: 0rem;
+    left: 1120px;
+    scale: 70%;
 }
 
 #callus:hover {
