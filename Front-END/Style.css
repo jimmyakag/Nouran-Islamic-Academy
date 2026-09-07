@@ -1,221 +1,641 @@
-<!DOCTYPE html>
-<html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, initial-scale=0.35">
-    <link rel="stylesheet" href="./Front-END/Style.css">
-    <link rel="icon" type="image/png" href="./Front-END/src/logo0.png">
-    <title>Home Page</title>
-</head>
+/* Centered layout canvas */
+html {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
 
-<body>
-    <header>
-        <a href="./index.html">
-            <img src="./Front-END/src/logo.png" width="50" height="50">
-        </a>
-        <style>
-            img {
-                position: relative;
-                left: 2rem;
-            }
-        </style>
-        </img>
+body {
+    background-color: #FFFFFF;
+    width: 1280px;
+    margin: 0 auto;
+}
 
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="./Front-END/Pages/whoarewe.html">Who Are We</a></li>
-                <li class="navdropdown">
-                    <p class="navdropdown">Our Courses
-                        <style>
-                            .navdropdown p {
-                                color: #174324;
-                                position: relative;
-                                top: 0.75rem;
-                            }
-                        </style>
-                    </p>
-                    <img src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20" height="20"
-                        id="dropdownarrow" />
+main {
+    position: relative;
+    width: 1280px;
+    margin: auto;
+}
 
-                    <ul>
-                        <li><a href="./Front-END/Pages/QuranandTajweed.html">Quran and Tajweed</a></li>
-                        <li><a href="./Front-END/Pages/ArabicLanguage.html">Arabic Language Learning</a></li>
-                        <li><a href="./Front-END/Pages/Fiqh.html">Fiqh</a></li>
-                        <li><a href="./Front-END/Pages/Hadith.html">Hadith</a></li>
-                        <li><a href="./Front-END/Pages/Seerah.html">Seerah</a></li>
-                        <li><a href="./Front-END/Pages/Tafsir.html">Tafsir</a></li>
-                    </ul>
-                </li>
-                <br>
-                <li><a href="./Front-END/Pages/contactus.html">Contact Us</a></li>
-                <a href="https://whatsform.com/clHUL5" target="_blank" rel="noopener noreferrer">
-                    <button id="joinnow">Join Now</button>
-                </a>
-            </ul>
+header {
+    background-color: #E5F2E0;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 1280px;
+    z-index: 1000;
+}
 
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
 
-        </nav>
-    </header>
-    <hr size="0" color="#ffffff">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="./Front-END/src/img1.png" id="img1" />
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 5px;
+    text-decoration-line: underline;
+    font-style: italic;
+}
 
-    <br>
-    <br>
-    <br>
-    <br>
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
 
+button {
+    background-color: #b5caad;
+    color: #174324;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    left: 35rem;
+    transition: all 0.2s ease;
+}
 
-    <section id="Sec1">
-        <img src="./Front-END/src/bg1.png" id="bg1" />
-        <img src="./Front-END/src/img2.png" id="img2" />
-        <p>
-            Nouran Islamic
-            <br> Academy
-            <style>
-                #Sec1 p {
-                    position: absolute;
-                    font-size: 75px;
-                    top: 6rem;
-                    left: 3rem;
-                    color: #174324;
-                    scale: 50%;
-                }
-            </style>
-        </p>
-        <h3>
-            Nouran Islamic Academy is your best way to learn about Islam
-            <br> online by its special teachers who are graduates from Al-Azhar
-            <style>
-                #Sec1 h3 {
-                    color: #174324;
-                    position: absolute;
-                    font-size: 25px;
-                    top: 14rem;
-                    left: -0.75rem;
-                    scale: 50%;
-                }
-            </style>
-        </h3>
-        <a href="./Front-END/Pages/whoarewe.html">
-            <button> Who Are We
-                <img src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20" height="20">
-                <style>
-                    #Sec1 button img {
-                        position: absolute;
-                        left: 7.8rem;
-                        top: 0.55rem;
-                        rotate: 180deg;
-                    }
-                </style>
-            </button>
-        </a>
-    </section>
+button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
 
+/* Classes */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    transform: translateX(340px);
+}
 
-    <section id="Sec2">
-        <h2>About us</h2>
-        <h3>We are glad to provide you the best way to learn about Islam
-            <br> with our Azhar teachers who are native arabs,
-            <br>those will teach you in well-English language
-            <br>and make your way to the path of light and guidance
-        </h3>
-        <img src="./Front-END/src/img3.png" id="img3" />
-    </section>
+#joinnow {
+    position: relative;
+    transform: translateX(-340px);
+}
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr size="7px" width="500px" color="#174324" id="sectionCutter">
-    <br>
-    <br>
-    <br>
-    <br>
+.navbar {
+    position: relative;
+    width: 100%;
+}
 
-    <section class="coursebuttons" id="CoursesSec">
-        <p>Our Courses</p>
-        <button onclick="window.location.href='./Front-END/Pages/QuranandTajweed.html'" id="C1">
-            <img src="./Front-END/src/img4.png">
-            <h2>Quran and Tajweed</h2>
-        </button>
+.navbar a {
+    text-decoration: none;
+    color: #174324;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
 
-        <button onclick="window.location.href='./Front-END/Pages/ArabicLanguage.html'" id="C2">
-            <img src="./Front-END/src/img5.png">
-            <h2>Arabic Language Learning</h2>
-        </button>
+.navbar a:hover {
+    text-decoration: none;
+    color: #047500;
+}
 
-        <button onclick="window.location.href='./Front-END/Pages/Fiqh.html'" id="C3">
-            <img src="./Front-END/src/img6.png">
-            <h2>Fiqh</h2>
-        </button>
-        <hr size="5px" width="400px" color="#174324" id="seperator">
-        <button onclick="window.location.href='./Front-END/Pages/Hadith.html'" id="C4">
-            <img src="./Front-END/src/img7.png">
-            <h2>Hadith</h2>
-        </button>
+.navdropdown ul {
+    background-color: #E5F2E0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50px);
+    max-width: 20rem;
+    padding: 0.5rem;
+    z-index: 1;
+}
 
-        <button onclick="window.location.href='./Front-END/Pages/Tafsir.html'" id="C5">
-            <img src="./Front-END/src/img8.png">
-            <h2>Tafsir</h2>
-        </button>
+.navdropdown:hover>ul {
+    display: block;
+}
 
+.navdropdown ul li {
+    text-align: left;
+    padding: 0.5rem;
+}
 
-        <button onclick="window.location.href='./Front-END/Pages/Seerah.html'" id="C6">
-            <img src="./Front-END/src/img9.png">
-            <h2>Seerah</h2>
-        </button>
-    </section>
+#dropdownarrow {
+    rotate: 180deg;
+    position: relative;
+    left: 7rem;
+    bottom: 0.5rem;
+}
 
-    <section id="pageEnd">
-        <img src="./Front-END/src/logo.png" />
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr size="5px" width="400px" color="#174324" id="seperator2">
-        <br>
-        <br>
-        <button
-            onclick="window.open('https://www.facebook.com/NouranAcademy?mibextid=wwXIfr&rdid=LpoRojMI3hZF67Uo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1RnqcAWEex%2F%3Fmibextid%3DwwXIfr#', '_blank')"
-            id="facebookbutton">
-            <img src="./Front-END/Assets/facebook.png">
-        </button>
+.navdropdown:hover #dropdownarrow {
+    rotate: -90deg;
+}
 
-        <button onclick="window.open('https://www.instagram.com/nouranacademy', '_blank')" id="instagrambutton">
-            <img src="./Front-END/Assets/instagram.png">
-        </button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="tel:+201106065860" id="Phone">
-            <p>Phone:+201106065860</p>
-        </a>
-        <a href="mailto:nouranacademy123@gmail.com" id="Email">
-            <p>nouranacademy123@gmail.com</p>
-        </a>
-        <h2>Smouha, Sidi Gaber, Alexandria, Egypt</h2>
-    </section>
+#img1 {
+    position: relative;
+    width: 200px;
+    left: 520px;
+}
 
-    <button onclick="window.open('https://wa.me/201106065860', '_blank')" class="FloatingButtons" id="whatsapp">
-        <img src="./Front-END/Assets/whatsapp.png">
-        <p>Whatsapp</p>
-    </button>
+/* Section 1 */
 
-    <button onclick="window.location.href='tel:+201106065860';" class="FloatingButtons" id="callus">
-        <img src="./Front-END/Assets/call.png">
-        <p>Call Us</p>
-    </button>
-</body>
+#bg1 {
+    position: absolute;
+    width: 1280px;
+    height: 415px;
+    transform: translateX(-2rem);
+}
 
-</html>
+#img2 {
+    position: absolute;
+    scale: 22.5%;
+    transform: translateX(1280px) translateY(-115rem);
+    border-radius: 7rem;
+}
+
+#Sec1 {
+    position: relative;
+    min-height: 415px;
+    width: 1280px;
+}
+
+#Sec1 img {
+    position: absolute;
+}
+
+#Sec1 button {
+    position: absolute;
+    display: flex;
+    transform: translateY(21rem) translateX(-500px);
+    width: 9.3rem;
+    scale: 80%;
+}
+
+#Sec1 button:hover>img {
+    filter: invert(100%);
+}
+
+/* Section 2 */
+
+#hoveredArrow {
+    visibility: hidden;
+}
+
+#Sec2 {
+    position: relative;
+    min-height: 350px;
+    width: 1280px;
+}
+
+#Sec2 img {
+    position: absolute;
+}
+
+#Sec2 h2 {
+    position: absolute;
+    font-size: 3rem;
+    transform: translateX(840px) translateY(7rem);
+    scale: 70%;
+}
+
+#Sec2 h3 {
+    position: absolute;
+    font-size: 25px;
+    transform: translateX(725px) translateY(11rem);
+    scale: 70%;
+}
+
+#img3 {
+    position: absolute;
+    scale: 20%;
+    transform: translateY(-140rem) translateX(-1880px);
+    border-radius: 7rem;
+}
+
+#sectionCutter {
+    transform: translateX(390px);
+}
+
+/* Courses Section */
+
+#CoursesSec {
+    position: relative;
+    height: 520px;
+    width: 1280px;
+    background-image: linear-gradient(to bottom, #ffffff 40%, #E5F2E0 60%);
+}
+
+#CoursesSec p {
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    color: #174324;
+    font-style: italic;
+}
+
+/* Courses Buttons */
+
+.coursebuttons img {
+    transition: border-radius 0.15s ease, scale 0.2s ease;
+    transition: border-radius 0.15s ease-out, scale 0.2s ease-out;
+}
+
+#C1 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-210rem);
+}
+
+#C1 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C1:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C1 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C1:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C2 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-242rem);
+}
+
+#C2 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C2:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C2 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C2:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C3 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-182rem);
+}
+
+#C3 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C3:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C3 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C3:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#seperator {
+    position: relative;
+    transform: translateX(440px) translateY(15rem);
+}
+
+#C4 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-30rem);
+}
+
+#C4 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C4:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C4 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C4:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C5 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-30rem);
+}
+
+#C5 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C5:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C5 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C5:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C6 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-30rem);
+}
+
+#C6 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C6:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C6 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C6:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+/* End Page */
+
+#pageEnd {
+    position: relative;
+    height: 360px;
+    background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
+    overflow: hidden;
+}
+
+#pageEnd img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: translateX(520px) translateY(0rem);
+    vertical-align: bottom;
+}
+
+#pageEnd a {
+    text-decoration: none;
+    color: #0c2212;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#pageEnd h2 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    transform: translateY(-9rem);
+}
+
+#pageEnd button:hover {
+    background-color: #047500;
+    color: #ffffff;
+}
+
+#seperator2 {
+    position: relative;
+    transform: translateX(440px) translateY(-5rem);
+}
+
+#facebookbutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(-5rem) translateY(-9rem);
+    scale: 70%;
+}
+
+#facebookbutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+    vertical-align: bottom;
+}
+
+#facebookbutton:hover>img {
+    filter: invert(100%);
+}
+
+#instagrambutton {
+    position: absolute;
+    background-color: #9eca8d;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateX(11rem) translateY(-9rem);
+    scale: 70%;
+}
+
+#instagrambutton img {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateX(-2.25rem) translateY(0.25rem);
+    vertical-align: bottom;
+}
+
+#instagrambutton:hover>img {
+    filter: invert(100%);
+}
+
+#Phone p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 50px;
+    text-transform: capitalize;
+    transform: translateX(30rem) translateY(-12rem);
+    scale: 80%;
+}
+
+#Email p {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    width: 50px;
+    text-transform: capitalize;
+    transform: translateX(52rem) translateY(-13.7rem);
+    scale: 80%;
+}
+
+/* Floating Buttons */
+
+.FloatingButtons {
+    position: fixed;
+    width: 10rem;
+    height: 3rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.FloatingButtons:hover {
+    transform: translateY(-5px);
+}
+
+#whatsapp {
+    background-color: #20BA5A;
+    bottom: 2.5rem;
+    left: 1680px;
+    scale: 70%;
+}
+
+#whatsapp:hover {
+    background-color: #1b994b;
+}
+
+#whatsapp img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+    vertical-align: bottom;
+}
+
+#whatsapp p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
+
+#callus {
+    background-color: rgb(0, 89, 255);
+    bottom: 0rem;
+    left: 1680px;
+    scale: 70%;
+}
+
+#callus:hover {
+    background-color: rgb(1, 74, 211);
+}
+
+#callus img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+    vertical-align: bottom;
+}
+
+#callus p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
