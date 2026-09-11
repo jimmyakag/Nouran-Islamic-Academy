@@ -3,59 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, initial-scale=0.35, user-scalable=yes">
-    <link rel="stylesheet" href="./Front-END/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./Front-END/Stylecopy.css">
     <link rel="icon" type="image/png" href="./Front-END/src/logo0.png">
     <title>Home Page</title>
 </head>
 
 <body>
     <header>
-        <a href="./index.html">
-            <img src="./Front-END/src/logo.png" width="50" height="50">
-        </a>
-        <style>
-            img {
-                position: relative;
-                left: 2rem;
-            }
-        </style>
-        </img>
-
-        <nav class="navbar">
-            <ul class="nav-links">
+        <div>
+            <a href="./index.html">
+                <img src="./Front-END/src/logo.png" height="70" />
+            </a>
+            <ul>
                 <li><a href="./Front-END/Pages/whoarewe.html">Who Are We</a></li>
                 <li class="navdropdown">
-                    <p class="navdropdown">Our Courses
-                        <style>
-                            .navdropdown p {
-                                color: #174324;
-                                position: relative;
-                                top: 0.75rem;
-                            }
-                        </style>
-                    </p>
-                    <img src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20" height="20"
-                        id="dropdownarrow" />
-
-                    <ul>
-                        <li><a href="./Front-END/Pages/QuranandTajweed.html">Quran and Tajweed</a></li>
-                        <li><a href="./Front-END/Pages/ArabicLanguage.html">Arabic Language Learning</a></li>
-                        <li><a href="./Front-END/Pages/Fiqh.html">Fiqh</a></li>
-                        <li><a href="./Front-END/Pages/Hadith.html">Hadith</a></li>
-                        <li><a href="./Front-END/Pages/Seerah.html">Seerah</a></li>
-                        <li><a href="./Front-END/Pages/Tafsir.html">Tafsir</a></li>
-                    </ul>
+                    <h2>
+                        Our Courses
+                    </h2>
+                    <!-- <img src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20" height="20"
+                            id="dropdownarrow" /> -->
+                    <!-- <ul>
+                            <li><a href="./Front-END/Pages/QuranandTajweed.html">
+                                    <h2>Quran and Tajweed</h2>
+                                </a></li>
+                            <li><a href="./Front-END/Pages/ArabicLanguage.html">
+                                    <h2>Arabic Language Learning</h2>
+                                </a></li>
+                            <li><a href="./Front-END/Pages/Fiqh.html">
+                                    <h2>Fiqh</h2>
+                                </a></li>
+                            <li><a href="./Front-END/Pages/Hadith.html">
+                                    <h2>Hadith</h2>
+                                </a></li>
+                            <li><a href="./Front-END/Pages/Seerah.html">
+                                    <h2>Seerah</h2>
+                                </a></li>
+                            <li><a href="./Front-END/Pages/Tafsir.html">
+                                    <h2>Tafsir</h2>
+                                </a></li>
+                        </ul> -->
                 </li>
-                <br>
-                <li><a href="./Front-END/Pages/contactus.html">Contact Us</a></li>
-                <a href="https://whatsform.com/clHUL5" target="_blank" rel="noopener noreferrer">
-                    <button id="joinnow">Join Now</button>
-                </a>
+
+                <li><a href="./Front-END/Pages/contactus.html">
+                        <h2>Contact Us</h2>
+                    </a>
+                </li>
             </ul>
-
-
-        </nav>
+            <button onclick="window.open('https://whatsform.com/clHUL5' , '_blank')">Join Now</button>
+        </div>
     </header>
     <hr size="0" color="#ffffff">
     <br>
@@ -64,71 +60,47 @@
     <br>
     <br>
     <br>
-    <img src="./Front-END/src/img1.png" id="img1" />
-
+    <div><img src="./Front-END/src/img1.png" class="head-Img" /></div>
     <br>
     <br>
     <br>
     <br>
-
+    <hr>
 
     <section id="Sec1">
-        <img src="./Front-END/src/bg1.png" id="bg1" />
-        <img src="./Front-END/src/img2.png" id="img2" />
-        <p>
+
+        <h1>
             Nouran Islamic
             <br> Academy
-            <style>
-                #Sec1 p {
-                    position: absolute;
-                    font-size: 75px;
-                    top: 6rem;
-                    left: 3rem;
-                    color: #174324;
-                    scale: 50%;
-                }
-            </style>
-        </p>
-        <h3>
+        </h1>
+
+        <img src="./Front-END/src/img2.png" class="head-Img" />
+
+        <p>
             Nouran Islamic Academy is your best way to learn about Islam
             <br> online by its special teachers who are graduates from Al-Azhar
-            <style>
-                #Sec1 h3 {
-                    color: #174324;
-                    position: absolute;
-                    font-size: 25px;
-                    top: 14rem;
-                    left: -0.75rem;
-                    scale: 50%;
-                }
-            </style>
-        </h3>
-        <a href="./Front-END/Pages/whoarewe.html">
-            <button> Who Are We
-                <img src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20" height="20">
-                <style>
-                    #Sec1 button img {
-                        position: absolute;
-                        left: 7.8rem;
-                        top: 0.55rem;
-                        rotate: 180deg;
-                    }
-                </style>
-            </button>
-        </a>
-    </section>
+        </p>
 
+        <button onclick="window.location.href='./Front-END/Pages/whoarewe.html'">Who Are We <img
+                src="./Front-END/Assets/arrow-left-5-svgrepo-com.png" width="20px" height="20px"></button>
+
+    </section>
+    <hr>
 
     <section id="Sec2">
-        <h2>About us</h2>
-        <h3>We are glad to provide you the best way to learn about Islam
+
+        <h1>About us</h1>
+
+        <p>We are glad to provide you the best way to learn about Islam
             <br> with our Azhar teachers who are native arabs,
             <br>those will teach you in well-English language
             <br>and make your way to the path of light and guidance
-        </h3>
-        <img src="./Front-END/src/img3.png" id="img3" />
-    </section>
+        </p>
 
+        <img src="./Front-END/src/img3.png" class="head-Img" />
+
+    </section>
+    <!-- 
     <br>
     <br>
     <br>
@@ -137,9 +109,9 @@
     <br>
     <br>
     <br>
-    <br>
+    <br> -->
 
-    <section class="coursebuttons" id="CoursesSec">
+    <!-- <section class="coursebuttons" id="CoursesSec">
         <p>Our Courses</p>
         <button onclick="window.location.href='./Front-END/Pages/QuranandTajweed.html'" id="C1">
             <img src="./Front-END/src/img4.png">
@@ -171,8 +143,8 @@
             <img src="./Front-END/src/img9.png">
             <h2>Seerah</h2>
         </button>
-    </section>
-
+    </section> -->
+    <!-- 
     <section id="pageEnd">
         <img src="./Front-END/src/logo.png" />
         <br>
@@ -205,9 +177,9 @@
             <p>nouranacademy123@gmail.com</p>
         </a>
         <h2>Smouha, Sidi Gaber, Alexandria, Egypt</h2>
-    </section>
+    </section> -->
 
-    <button onclick="window.open('https://wa.me/201106065860', '_blank')" class="FloatingButtons" id="whatsapp">
+    <!-- <button onclick="window.open('https://wa.me/201106065860', '_blank')" class="FloatingButtons" id="whatsapp">
         <img src="./Front-END/Assets/whatsapp.png">
         <p>Whatsapp</p>
     </button>
@@ -215,7 +187,7 @@
     <button onclick="window.location.href='tel:+201106065860';" class="FloatingButtons" id="callus">
         <img src="./Front-END/Assets/call.png">
         <p>Call Us</p>
-    </button>
+    </button> -->
 </body>
 
 </html>
