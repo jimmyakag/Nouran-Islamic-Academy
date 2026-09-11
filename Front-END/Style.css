@@ -45,7 +45,7 @@ header div ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 40px;
+    gap: 60px;
 }
 
 section {
@@ -67,7 +67,7 @@ div {
 h1 {
     position: relative;
     font-family: Arial, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 200;
     color: #174324;
 
@@ -76,8 +76,8 @@ h1 {
 p {
     position: relative;
     font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     text-decoration-line: underline;
     font-style: italic;
     color: #174324;
@@ -85,16 +85,20 @@ p {
 
 h2 {
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     color: #174324;
+}
+
+button:hover>h2 {
+    color: white;
 }
 
 /* Media */
 
 .head-Img {
     position: relative;
-    width: 280px;
+    width: 380px;
     border-radius: 10px;
 }
 
@@ -113,7 +117,7 @@ button {
 
     /* Text Font */
     font-family: Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 22px;
     font-weight: 200;
     position: relative;
     transition: all 0.2s ease;
@@ -138,9 +142,48 @@ a:hover {
 }
 
 /* Classes */
-.navbar {
+/* .navbar {
     position: relative;
     width: 100%;
+} */
+
+.navdropdown {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: center;
+    height: 70px;
+}
+
+.navdropdown img {
+    position: relative;
+    rotate: 180deg;
+}
+
+.navdropdown:hover>img {
+    rotate: 270deg;
+}
+
+.navdropdown ul {
+    position: fixed;
+    background-color: #E5F2E0;
+    display: none;
+    top: 60px;
+    max-width: 250px;
+    border-radius: 10px;
+    z-index: 101;
+}
+
+.navdropdown ul li {
+    height: auto;
+    padding: 0 10px;
+    margin: 15px 0;
+
+}
+
+.navdropdown:hover>ul {
+    display: block;
 }
 
 /* Section 1 */
@@ -148,11 +191,12 @@ a:hover {
 #Sec1 {
     background-image: url(./src/bg1.png);
     background-size: contain;
+    background-position-x: center;
     position: relative;
     min-height: 500px;
     display: grid;
-    grid-template-columns: auto 280px;
-    grid-template-rows: 200px 100px 200px;
+    grid-template-columns: auto 380px;
+    grid-template-rows: 200px 110px 190px;
     align-items: center;
     justify-items: center;
     column-gap: 150px;
@@ -180,6 +224,7 @@ a:hover {
     grid-row: 3;
     justify-self: start;
     align-self: self-start;
+    align-items: center;
 }
 
 #Sec1 button img {
@@ -198,9 +243,9 @@ a:hover {
 
 #Sec2 {
     position: relative;
-    min-height: 450px;
+    min-height: 500px;
     display: grid;
-    grid-template-columns: auto 280px;
+    grid-template-columns: auto 380px;
     column-gap: 150px;
     /* grid-template-rows: 1fr 1fr; */
     align-items: center;
@@ -227,249 +272,83 @@ a:hover {
 }
 
 #sectionCutter {
-    transform: translateX(390px);
-
+    justify-self: center;
 }
 
 /* Courses Section */
 
 #CoursesSec {
     position: relative;
+    display: grid;
     height: 520px;
     background-image: linear-gradient(to bottom, #ffffff 40%, #E5F2E0 60%);
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto 1fr 7px 1fr;
+    column-gap: 100px;
 }
 
-#CoursesSec p {
-    position: relative;
-    font-size: 4rem;
-    text-align: center;
-    color: #174324;
-    font-style: italic;
+#CoursesSec h1 {
+    font-size: 55px;
+    grid-row: 1;
+    grid-column: 1 / span 3;
 }
-
 
 /* Courses Buttons */
+
+.coursebuttons button {
+    width: 200px;
+}
 
 .coursebuttons img {
     transition: border-radius 0.15s ease, scale 0.2s ease;
     transition: border-radius 0.15s ease-out, scale 0.2s ease-out;
+    width: 50px;
+    /* height: 50px; */
+    border-radius: 10px;
 }
 
 #C1 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(-350rem) translateY(-210rem);
-}
-
-#C1 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C1:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C1 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-
-}
-
-#C1:hover>img {
-    border-radius: 50%;
-    scale: 115%;
-
+    display: table-column;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 #C2 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(-175rem) translateY(-242rem);
-}
-
-#C2 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C2:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C2 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-}
-
-#C2:hover>img {
-    border-radius: 50%;
-    scale: 115%;
+    display: table-column;
+    grid-row: 2;
+    grid-column: 2;
 }
 
 #C3 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(0rem) translateY(-182rem);
-}
-
-#C3 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C3:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C3 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-}
-
-#C3:hover>img {
-    border-radius: 50%;
-    scale: 115%;
+    display: table-column;
+    grid-row: 2;
+    grid-column: 3;
 }
 
 #seperator {
     position: relative;
-    transform: translateX(440px) translateY(15rem);
+    grid-row: 3;
+    grid-column: 1 / span 3;
 }
 
 #C4 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(-350rem) translateY(-30rem);
-}
-
-#C4 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C4:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C4 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-}
-
-#C4:hover>img {
-    border-radius: 50%;
-    scale: 115%;
+    display: table-column;
+    grid-row: 4;
+    grid-column: 1;
 }
 
 #C5 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(-175rem) translateY(-30rem);
-}
-
-#C5 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C5:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C5 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-}
-
-#C5:hover>img {
-    border-radius: 50%;
-    scale: 115%;
+    display: table-column;
+    grid-row: 4;
+    grid-column: 2;
 }
 
 #C6 {
-    position: absolute;
-    scale: 12%;
-    width: 50rem;
-    border-radius: 7rem;
-    transform: translateX(0rem) translateY(-30rem);
-}
-
-#C6 h2 {
-    position: relative;
-    font-size: 7rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(-1.5rem);
-}
-
-#C6:hover>h2 {
-    color: #E5F2E0;
-}
-
-#C6 img {
-    position: relative;
-    max-width: 35rem;
-    max-height: 35rem;
-    border-radius: 7rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: translateX(-1.5rem);
-}
-
-#C6:hover>img {
-    border-radius: 50%;
-    scale: 115%;
+    display: table-column;
+    grid-row: 4;
+    grid-column: 3;
 }
 
 /* End Page */
@@ -477,56 +356,62 @@ a:hover {
 #pageEnd {
     position: relative;
     height: 360px;
-    background-image: linear-gradient(to bottom, #E5F2E0 50%, #174324 100%);
+    background-image: linear-gradient(to bottom, #E5F2E0 60%, #174324 100%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 75px;
 }
 
 #pageEnd img {
     position: relative;
     width: 150px;
     height: 150px;
-    transform: translateX(520px) translateY(0rem);
+    grid-row: 1;
+    grid-column: 1 / span 2;
 }
 
-#pageEnd a {
-    text-decoration: none;
-    color: #0c2212;
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+#pageEnd button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
 }
 
 #pageEnd h2 {
+    color: #174324;
     text-align: center;
     font-weight: 300;
     font-style: italic;
-    transform: translateY(-9rem);
+    grid-row: 5;
+    grid-column: 1 / span 2;
 }
 
-#pageEnd button:hover {
-    background-color: #047500;
-    color: #ffffff;
+#pageEnd p {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 #seperator2 {
     position: relative;
-    transform: translateX(440px) translateY(-5rem);
+    grid-row: 2;
+    grid-column: 1 / span 2;
 }
 
 #facebookbutton {
-    position: absolute;
-    background-color: #9eca8d;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    transform: translateX(-5rem) translateY(-9rem);
-    scale: 70%;
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: self-end;
 }
 
 #facebookbutton img {
     position: relative;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: translateX(-2.25rem) translateY(0.25rem);
+    width: 20px;
+    height: 20px;
 }
 
 #facebookbutton:hover>img {
@@ -534,44 +419,32 @@ a:hover {
 }
 
 #instagrambutton {
-    position: absolute;
-    background-color: #9eca8d;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    transform: translateX(11rem) translateY(-9rem);
-    scale: 70%;
+    justify-self: self-start;
+    grid-row: 3;
+    grid-column: 2;
 }
 
 #instagrambutton img {
     position: relative;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: translateX(-2.25rem) translateY(0.25rem);
+    width: 20px;
+    height: 20px;
 }
 
 #instagrambutton:hover>img {
     filter: invert(100%);
 }
 
-#Phone p {
-    position: relative;
-    font-style: italic;
-    font-weight: bold;
-    width: 50px;
-    text-transform: capitalize;
-    transform: translateX(30rem) translateY(-12rem);
-    scale: 80%;
+#Phone {
+    grid-row: 4;
+    grid-column: 1;
+    justify-self: self-end;
 }
 
-#Email p {
-    position: relative;
-    font-style: italic;
-    font-weight: bold;
-    width: 50px;
-    text-transform: capitalize;
-    transform: translateX(52rem) translateY(-13.7rem);
-    scale: 80%;
+
+#Email {
+    justify-self: self-start;
+    grid-row: 4;
+    grid-column: 2;
 }
 
 /* Floating Buttons */
@@ -579,11 +452,12 @@ a:hover {
 .FloatingButtons {
     /* Fixes the button relative to the viewport */
     position: fixed;
+    width: 160px;
+    height: 50px;
 
-
-    /* Size and shape */
-    width: 10rem;
-    height: 3rem;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
 
     /* Styling & Alignment */
 
@@ -601,52 +475,29 @@ a:hover {
     transform: translateY(-5px);
 }
 
+.FloatingButtons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
 #whatsapp {
     background-color: #20BA5A;
-    bottom: 2.5rem;
-    left: 1120px;
-    scale: 70%;
+    bottom: 65px;
+    right: 25px;
+
 }
 
 #whatsapp:hover {
     background-color: #1b994b;
 }
 
-#whatsapp img {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    transform: translateX(-5rem);
-    filter: invert(100%);
-}
-
-#whatsapp p {
-    position: relative;
-    font-size: 3;
-    transform: translateY(-2rem) translateX(1rem);
-}
-
 #callus {
     background-color: rgb(0, 89, 255);
-    bottom: 0rem;
-    left: 1120px;
-    scale: 70%;
+    right: 25px;
+    bottom: 5px;
 }
 
 #callus:hover {
     background-color: rgb(1, 74, 211);
-}
-
-#callus img {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    transform: translateX(-5rem);
-    filter: invert(100%);
-}
-
-#callus p {
-    position: relative;
-    font-size: 3;
-    transform: translateY(-2rem) translateX(1rem);
 }
