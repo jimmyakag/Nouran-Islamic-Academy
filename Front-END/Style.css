@@ -449,6 +449,10 @@ a:hover {
 
 /* Floating Buttons */
 
+.FloatingButtonsMob {
+    display: none;
+}
+
 .FloatingButtons {
     /* Fixes the button relative to the viewport */
     position: fixed;
@@ -500,4 +504,324 @@ a:hover {
 
 #callus:hover {
     background-color: rgb(1, 74, 211);
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    html {
+        min-width: 320px;
+        max-width: 600px;
+    }
+
+    header {
+        width: 100%;
+        min-width: 320px;
+        height: 50px;
+    }
+
+    header div {
+        min-width: 320px;
+        max-width: 600px;
+        padding: 0px 20px;
+    }
+
+    header div ul {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        min-width: 320px;
+        padding: 50px 50px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 10px;
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    .head-Img {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    button {
+        /* Text Font */
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    a {
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    /* Section 1 */
+
+    #Sec1 {
+        min-height: 500px;
+        grid-template-columns: 200px;
+        grid-template-rows: 1fr 50px 50px 0.25fr;
+    }
+
+    #Sec1 img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #Sec1 h1 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: self-end;
+        justify-self: start;
+    }
+
+    #Sec1 p {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Sec1 button {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #Sec1 button img {
+        rotate: 180deg;
+    }
+
+
+    #Sec2 {
+        min-height: 500px;
+        grid-template-columns: 200px;
+        column-gap: 50px;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+
+    #Sec2 img {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Sec2 h1 {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: self-end;
+        justify-self: start;
+    }
+
+    #Sec2 p {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 0px;
+    }
+
+    #sectionCutter {
+        width: 200px;
+    }
+
+    /* Courses Section */
+
+    #CoursesSec {
+        min-height: 750px;
+        grid-template-columns: 300px;
+        grid-template-rows: auto 100px 100px 100px 100px 100px 100px;
+        row-gap: 10px;
+    }
+
+    #CoursesSec h1 {
+        font-size: 40px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    /* Courses Buttons */
+
+    .coursebuttons button {
+        width: 100px;
+    }
+
+    .coursebuttons img {
+        transition: border-radius 0.15s ease, scale 0.2s ease;
+        transition: border-radius 0.15s ease-out, scale 0.2s ease-out;
+        width: 50px;
+        /* height: 50px; */
+        border-radius: 10px;
+    }
+
+    #C1 {
+        display: table-column;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #C2 {
+        display: table-column;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #C3 {
+        display: table-column;
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    #seperator {
+        display: none;
+    }
+
+    #C4 {
+        display: table-column;
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    #C5 {
+        display: table-column;
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    #C6 {
+        display: table-column;
+        grid-row: 7;
+        grid-column: 1;
+    }
+
+    /* End Page */
+
+    #pageEnd {
+        min-height: 360px;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: auto 7px 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        padding: 10px 20px;
+    }
+
+    #pageEnd img {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    #pageEnd button {
+        width: 30px;
+        height: 30px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #pageEnd h2 {
+        font-weight: 200;
+        font-style: italic;
+        grid-row: 6;
+        grid-column: 1 / span 2;
+    }
+
+    #seperator2 {
+        position: relative;
+        grid-row: 2;
+        grid-column: 1 / span 2;
+        width: 200px;
+    }
+
+    #facebookbutton {
+        grid-row: 3;
+        grid-column: 1;
+        justify-self: self-end;
+    }
+
+    #facebookbutton img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+    }
+
+    #instagrambutton {
+        justify-self: self-start;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #instagrambutton img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+    }
+
+    #Phone {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+
+
+    #Email {
+        justify-self: center;
+        grid-row: 5;
+        grid-column: 1 /span 2;
+    }
+
+    .FloatingButtons {
+        display: none;
+    }
+
+    .FloatingButtonsMob {
+        /* Fixes the button relative to the viewport */
+        display: flex;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        /* Styling & Alignment */
+
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+
+        /* Keep on top of other content */
+        z-index: 1000;
+
+        transition: transform 0.2s ease;
+    }
+
+    .FloatingButtonsMob img {
+        width: 20px;
+        height: 20px;
+        filter: invert(100%);
+    }
+
+    #whatsapp {
+        background-color: #20BA5A;
+        bottom: 45px;
+        right: 15px;
+
+    }
+
+    #callus {
+        background-color: rgb(0, 89, 255);
+        right: 15px;
+        bottom: 10px;
+    }
 }
