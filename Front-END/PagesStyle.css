@@ -148,6 +148,10 @@ a:hover {
     color: #047500;
 }
 
+.navmenu {
+    display: none;
+}
+
 /* Classes */
 .navdropdown {
     position: relative;
