@@ -1,0 +1,223 @@
+/* Courses Buttons */
+
+.coursebuttons img {
+    transition: border-radius 0.15s ease, scale 0.2s ease;
+    transition: border-radius 0.15s ease-out, scale 0.2s ease-out;
+}
+
+#C1 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-210rem);
+}
+
+#C1 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C1:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C1 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+
+}
+
+#C1:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+
+}
+
+#C2 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-242rem);
+}
+
+#C2 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C2:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C2 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C2:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C3 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-182rem);
+}
+
+#C3 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C3:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C3 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C3:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#seperator {
+    position: relative;
+    transform: translateX(440px) translateY(15rem);
+}
+
+#C4 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-350rem) translateY(-30rem);
+}
+
+#C4 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C4:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C4 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C4:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C5 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(-175rem) translateY(-30rem);
+}
+
+#C5 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C5:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C5 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C5:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}
+
+#C6 {
+    position: absolute;
+    scale: 12%;
+    width: 50rem;
+    border-radius: 7rem;
+    transform: translateX(0rem) translateY(-30rem);
+}
+
+#C6 h2 {
+    position: relative;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-1.5rem);
+}
+
+#C6:hover>h2 {
+    color: #E5F2E0;
+}
+
+#C6 img {
+    position: relative;
+    max-width: 35rem;
+    max-height: 35rem;
+    border-radius: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: translateX(-1.5rem);
+}
+
+#C6:hover>img {
+    border-radius: 50%;
+    scale: 115%;
+}

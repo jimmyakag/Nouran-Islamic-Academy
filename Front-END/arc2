@@ -1,0 +1,76 @@
+/* Floating Buttons */
+
+.FloatingButtons {
+    /* Fixes the button relative to the viewport */
+    position: fixed;
+
+
+    /* Size and shape */
+    width: 10rem;
+    height: 3rem;
+
+    /* Styling & Alignment */
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+    /* Keep on top of other content */
+    z-index: 1000;
+
+    transition: transform 0.2s ease;
+}
+
+.FloatingButtons:hover {
+    transform: translateY(-5px);
+}
+
+#whatsapp {
+    background-color: #20BA5A;
+    bottom: 2.5rem;
+    left: 1120px;
+    scale: 70%;
+}
+
+#whatsapp:hover {
+    background-color: #1b994b;
+}
+
+#whatsapp img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+}
+
+#whatsapp p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
+
+#callus {
+    background-color: rgb(0, 89, 255);
+    bottom: 0rem;
+    left: 1120px;
+    scale: 70%;
+}
+
+#callus:hover {
+    background-color: rgb(1, 74, 211);
+}
+
+#callus img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: translateX(-5rem);
+    filter: invert(100%);
+}
+
+#callus p {
+    position: relative;
+    font-size: 3;
+    transform: translateY(-2rem) translateX(1rem);
+}
