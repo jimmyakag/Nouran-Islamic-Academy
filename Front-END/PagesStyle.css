@@ -565,7 +565,9 @@ a:hover {
     }
 
     header div button {
-        display: none;
+        display: block;
+        font-size: 20px;
+        font-weight: 800;
     }
 
     header div ul {
@@ -668,6 +670,7 @@ a:hover {
     }
 
     .navmenulist button {
+        display: none;
         justify-self: center;
         width: 170px;
         height: 50px;
